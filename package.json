@@ -4,46 +4,48 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"ts-node-dev --respawn --transpile-only src/app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --config nodemon.json src/app.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Prasadkpd/Rest_API_Express_Node_Typescript.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Prasadkpd",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Prasadkpd/Rest_API_Express_Node_Typescript/issues"
   },
   "homepage": "https://github.com/Prasadkpd/Rest_API_Express_Node_Typescript#readme",
   "dependencies": {
-    "bcrypt": "^5.1.0",
-    "config": "^3.3.8",
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.7",
     "cors": "^2.8.5",
-    "dayjs": "^1.11.6",
-    "express": "^4.18.2",
+    "dayjs": "^1.11.1",
+    "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
-    "mongoose": "^6.7.2",
-    "nanoid": "^4.0.0",
-    "pino": "^7.0.2",
-    "pino-pretty": "^7.1.0",
-    "zod": "^3.19.1"
+    "mongoose": "5.12.7",
+    "nanoid": "^3.3.2",
+    "nodemon": "^2.0.15",
+    "pino": "^7.10.0",
+    "pino-pretty": "^7.6.1",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/body-parser": "^1.19.2",
-    "@types/config": "^3.3.0",
+    "@types/config": "0.0.41",
     "@types/cors": "^2.8.12",
-    "@types/express": "^4.17.14",
-    "@types/jsonwebtoken": "^8.5.9",
-    "@types/lodash": "^4.14.188",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/lodash": "^4.14.181",
+    "@types/mongoose": "^5.11.97",
     "@types/nanoid": "^3.0.0",
-    "@types/node": "^18.11.9",
+    "@types/node": "^17.0.24",
     "@types/pino": "^7.0.5",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^4.8.4"
+    "@types/yup": "^0.29.13",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
   }
 }
