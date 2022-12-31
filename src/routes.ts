@@ -1,14 +1,14 @@
+import { createUserSchema } from './schema/user.schema';
 import { Express } from "express";
 import { createUserHandler } from "./controller/user.controller";
-import validateRequest from "./middleware/validateRequest";
-import { createUserSchema } from "./schema/user.schema";
+import validateResource from "./middleware/validateResource";
 
 export default function (app: Express) {
     app.get("/healthcheck", (req, res) => res.sendStatus(200));
 
     // Register user
     // POST /api/user
-    app.post("/api/users", validateRequest(createUserSchema), createUserHandler)
+    app.post("/api/users", validateResource(createUserSchema) ,createUserHandler)
 
     // Login
     // POST /api/session
